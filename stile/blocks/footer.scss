@@ -1,0 +1,61 @@
+@import 'color';
+@import 'fonts';
+
+.footer {
+    padding: 40px 0;
+    background-color: $color-main-blue;
+
+    &__list {
+        list-style-type: none;
+    }
+
+    &__title {
+        font-size: $font-big;
+        color: $color-main-dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-main-dark;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+    }
+
+    &__contacts {
+        padding: 0;
+    }
+
+    &__phone {
+        color: $color-main-dark;
+        font-size: $font-h3;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.8;
+            color: $color-main-dark;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .footer {
+        &__info {
+            padding: 20px 0 0 0;
+        }
+
+        &__list {
+            padding: 0;
+        }
+
+        &__contacts {
+            padding: 20px 0 0 0;
+        }
+
+    }
+}
+
+@media(max-width: 575px) {
+    .footer {
+        padding: 40px 20px;
+    }
+}

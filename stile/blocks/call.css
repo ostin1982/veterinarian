@@ -1,0 +1,38 @@
+.call {
+  padding: 80px 0 0 0;
+}
+
+.call__block {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.call__heading {
+  font-size: 48px;
+  text-align: left;
+}
+
+.call__heading span {
+  font-weight: bold;
+}
+
+.call__text {
+  font-size: 18px;
+  text-align: left;
+}
+
+.call__img {
+  max-width: 100%;
+  max-height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+@media (max-width: 991px) {
+  .call__block {
+    padding-bottom: 20px;
+  }
+}
+/*# sourceMappingURL=call.css.map */

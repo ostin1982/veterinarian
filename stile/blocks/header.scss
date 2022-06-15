@@ -1,0 +1,89 @@
+@import 'color';
+@import 'fonts';
+
+.header {
+    background-color: $color-main-blue;
+    padding-top: 28px;
+
+    
+    &__burger {
+        display: none;
+    }
+
+    &__list {
+        display: flex;
+        list-style: none;
+    }
+
+    &__link {
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &__text {
+        font-size: $font-small;
+    }
+
+    &__contacts {
+        padding: 0;
+    }
+
+    &__phone {
+        color: $color-main-dark;
+        font-size: $font-h3;
+        text-decoration: none;
+
+        &:hover {
+            opacity: 0.8;
+            color: $color-main-dark;
+        }
+    }
+
+    &__title {
+        color: $color-main-dark;
+        font-size: $font-big;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-main-dark;
+            opacity: 0.8;
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .header {
+        &__menu {
+            display: none;
+        }
+
+        &__list {
+            display: none;
+        }
+
+        &__burger {
+            display: flex;
+        }
+    }
+}
+
+@media(max-width: 767px) {
+    .header {
+        padding: 28px 20px 0 20px;
+
+        &__contacts {
+            padding: 20px 0 0 0; 
+        }
+    }
+}
+
+@media(max-width: 420px) {
+    .header {
+        &__phone {
+            font-size: $font-main;
+        }
+    }
+}

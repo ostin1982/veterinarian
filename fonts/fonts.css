@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'PF Din Text Universal';
+    src: url('PFDinTextUniversal-Light.woff2');
+    font-weight: lighter;
+    font-style: lighter;
+}
+
+@font-face {
+    font-family: 'PF Din Text Universal';
+    src: url('PFDinTextUniversal.woff2');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Universal';
+    src: url('PFDinTextUniversal-Medium.woff2');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'PF Din Text Universal';
+    src: url('PFDinTextUniversal-Bold.woff2');
+    font-weight: bold;
+    font-style: normal;
+}

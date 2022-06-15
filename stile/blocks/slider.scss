@@ -1,0 +1,152 @@
+@import 'color';
+@import 'fonts';
+
+.slider {
+    background-color: $color-main-blue;
+    height: 660px;
+
+    &__left {
+        flex-direction: column;
+        max-height: 100%;
+    }
+
+    &__heading {
+        font-size: $font-h1;
+        margin: 104px 0 24px 0;
+
+        & span {
+            font-weight: bold;
+        }
+    }
+
+    &__text {
+        font-size: $font-h4;
+    }
+
+    &__right {
+        position: relative;
+    }
+
+    &__circle {
+        width: 431px;
+        max-width: 100%;
+        height: 431px;
+        max-height: 100%;
+        position: absolute;
+        object-fit: contain;
+        margin-top: -230px;
+    }
+
+    &__img {
+        object-fit: contain;
+        padding: 20px 0 0 80px;
+        z-index: 10;
+    }
+
+    &__choice {
+        z-index: 10;
+    }
+
+    &__title {
+        font-size: $font-main;
+    }
+
+    &__list {
+        list-style: none;
+    }
+
+    &__subtitle {
+        font-size: $font-big;
+        color: $color-main-dark;
+        text-decoration: none;
+
+        &:hover {
+            color: $color-main-dark;
+            text-decoration: none;
+            opacity: 0.8;
+        }
+
+        &_active {
+            position: relative;
+            font-size: $font-h3;
+            font-weight: bold;
+
+            &::before {
+                content: '⟩';
+                font-size: $font-h3;
+                font-weight: bold;
+                position: absolute;
+                top: -2px;
+                left: -15px;
+            }
+        }
+    }
+}
+
+@media(max-width: 991px) {
+    .slider {
+        height: 980px;
+        max-height: 100%;
+
+        &__heading {
+            margin: 52px 0 24px 0;
+        }
+    }
+}
+
+@media(max-width: 565px) {
+    .slider {
+        height: 1040px;
+
+        &__heading {
+            font-size: $font-h2;
+        }
+
+        &__right {
+            height: 740px;
+            flex-direction: column;
+            z-index: 1;
+        }
+
+        &__circle {
+            margin-top: 0px;
+        }
+
+        &__list {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        &_active {
+            &::before {
+                position: absolute;
+                left: -15px;
+            }
+        }
+
+        &__subtitle {
+            padding-left: 15px;
+            font-size: $font-main;
+            
+            &_active {
+                font-size: $font-large;
+    
+                &::before {
+                    font-size: $font-large;
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    .slider {
+        height: 1320px;
+
+        &__img {
+            padding: 0;
+            margin: 0 auto;
+        }
+    }
+}

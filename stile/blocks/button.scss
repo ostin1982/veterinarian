@@ -1,0 +1,29 @@
+@import 'color';
+@import 'fonts';
+
+.button {
+    border: 2px solid $color-second-blue;
+    border-radius: 10px;
+    padding: 18px 32px;
+    color: $color-main-dark;
+    background-color: $color-main-blue;
+    font-size: $font-small;
+
+    &__format {
+        font-size: $font-big;
+    }
+
+    &__services {
+        background-color: $color-second-blue;
+    }
+
+    &__call {
+        height: 67px;
+    }
+}
+
+@media(max-width: 420px) {
+    .button {
+        padding: 9px 16px;
+    }
+}

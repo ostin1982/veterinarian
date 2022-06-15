@@ -1,0 +1,17 @@
+@import 'color';
+@import 'fonts';
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: 'PF Din Text Universal', Arial, Helvetica, sans-serif;
+    color: $color-main-dark;
+    background-color: $color-main-white;
+    font-size: $font-main;
+    margin: 0;
+    padding: 0;
+}

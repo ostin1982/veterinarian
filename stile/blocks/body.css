@@ -1,0 +1,16 @@
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.body {
+  font-family: 'PF Din Text Universal', Arial, Helvetica, sans-serif;
+  color: #4d4d4d;
+  background-color: #ffffff;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+/*# sourceMappingURL=body.css.map */

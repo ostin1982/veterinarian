@@ -1,0 +1,98 @@
+.services {
+  background-color: #f9fafa;
+  padding: 80px 0;
+}
+
+.services__heading {
+  font-size: 64px;
+  text-align: center;
+}
+
+.services__heading span {
+  font-weight: bold;
+}
+
+.services__text {
+  font-size: 20px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+.services__card {
+  margin-top: 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.services__card:hover {
+  background-color: #b5e5f9;
+  -webkit-box-shadow: 0 0 20px #b5e5f9;
+          box-shadow: 0 0 20px #b5e5f9;
+}
+
+.services__card:hover__img {
+  background-color: #ffffff;
+}
+
+.services__card:hover .button__services {
+  background-color: #ffffff;
+}
+
+.services__body {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.services__section {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 350px;
+  max-height: 100%;
+}
+
+.services__img {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 60px;
+  width: 120px;
+  height: 120px;
+}
+
+.services__svg {
+  width: 80px;
+  height: 80px;
+}
+
+.services__title {
+  font-size: 20px;
+  text-align: center;
+}
+
+.services__subtitle {
+  font-size: 16px;
+  text-align: center;
+}
+
+.services__box {
+  width: 100%;
+  border-top: 1px solid #e1f2f9;
+}
+
+.services__price {
+  font-size: 16px;
+}
+
+.services__price span {
+  font-weight: bold;
+}
+
+@media (max-width: 575px) {
+  .services__heading {
+    font-size: 48px;
+  }
+}
+/*# sourceMappingURL=services.css.map */

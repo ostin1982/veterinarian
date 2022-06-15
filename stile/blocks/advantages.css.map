@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAGA,AAAA,WAAW,CAAC;EACR,OAAO,EAAE,MAAM;CAgBlB;;AAdI,AAAD,kBAAQ,CAAC;EACL,cAAc,EAAE,MAAM;CACzB;;AAEA,AAAD,gBAAM,CAAC;EACH,KAAK,EAAE,IAAI;EACX,MAAM,EAAE,IAAI;EACZ,MAAM,EAAE,MAAM;CACjB;;AAEA,AAAD,iBAAO,CAAC;EACJ,SAAS,EEbJ,IAAI;EFcT,UAAU,EAAE,MAAM;CACrB;;AAGL,MAAM,EAAC,SAAS,EAAE,KAAK;EAEd,AAAD,kBAAQ,CAAC;IACL,WAAW,EAAE,IAAI;GAKpB;EANA,AAGG,kBAHI,AAGH,YAAY,CAAC;IACV,WAAW,EAAE,CAAC;GACjB",
+    "sources": [
+        "advantages.scss",
+        "_color.scss",
+        "_fonts.scss"
+    ],
+    "names": [],
+    "file": "advantages.css"
+}

@@ -1,0 +1,33 @@
+@import 'color';
+@import 'fonts';
+
+.advantages {
+    padding: 80px 0;
+
+    &__block {
+        flex-direction: column;
+    }
+
+    &__svg {
+        width: 80px;
+        height: 80px;
+        margin: 0 auto;
+    }
+
+    &__text {
+        font-size: $font-large;
+        text-align: center;
+    }
+}
+
+@media(max-width: 767px) {
+    .advantages {
+        &__block {
+            padding-top: 2rem;
+
+            &:first-child {
+                padding-top: 0;
+            }
+        }
+    }
+}

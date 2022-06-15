@@ -1,0 +1,96 @@
+@import 'color';
+@import 'fonts';
+
+.services {
+    background-color: $color-second-white;
+    padding: 80px 0;
+
+    &__heading {
+        font-size: $font-h1;
+        text-align: center;
+
+        & span {
+            font-weight: bold;
+        }
+    }
+
+    &__text {
+        font-size: $font-large;
+        text-align: center;
+        font-weight: lighter;
+    }
+
+    &__card {
+        margin-top: 20px;
+        cursor: pointer;
+        border: none;
+
+        &:hover {
+            background-color: $color-second-blue;
+            box-shadow: 0 0 20px $color-second-blue;
+
+            &__img {
+                background-color: $color-main-white;
+            }
+
+            & .button__services {
+                background-color: $color-main-white;
+            }
+        }
+    }
+
+    &__body {
+        flex-direction: column;
+    }
+
+    &__section {
+        flex-direction: column;
+        height: 350px;
+        max-height: 100%;
+    }
+
+    &__img {
+        background-color: $color-main-white;
+        padding: 20px;
+        border-radius: 60px;
+        width: 120px;
+        height: 120px;
+    }
+
+    &__svg {
+        width: 80px;
+        height: 80px;
+        
+    }
+
+    &__title {
+        font-size: $font-large;
+        text-align: center;
+    }
+
+    &__subtitle {
+        font-size: $font-main;
+        text-align: center;
+    }
+
+    &__box {
+        width: 100%;
+        border-top: 1px solid $color-main-blue;
+    }
+
+    &__price {
+        font-size: $font-main;
+
+        & span {
+            font-weight: bold;
+        }
+    }
+}
+
+@media(max-width: 575px) {
+    .services {
+        &__heading {
+            font-size: $font-h2;
+        }
+    }
+}

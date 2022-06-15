@@ -1,0 +1,29 @@
+.format {
+  background-color: #e1f2f9;
+  padding: 20px 0 40px 0;
+}
+
+.format__block {
+  background-color: #ffffff;
+  width: 90%;
+  border-radius: 20px;
+  margin: -70px auto 0 auto;
+  -webkit-box-shadow: 0 0 30px #4d4d4d;
+          box-shadow: 0 0 30px #4d4d4d;
+}
+
+.format__heading {
+  font-size: 24px;
+  text-align: center;
+}
+
+.format__heading span {
+  font-weight: bold;
+}
+
+@media (max-width: 565px) {
+  .format__block {
+    margin: 0 auto 0 auto;
+  }
+}
+/*# sourceMappingURL=format.css.map */
