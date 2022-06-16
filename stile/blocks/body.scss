@@ -14,4 +14,8 @@
     font-size: $font-main;
     margin: 0;
     padding: 0;
+
+    &_look {
+        overflow: hidden;
+    }
 }

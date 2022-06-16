@@ -1,9 +1,28 @@
 .header {
-  background-color: #e1f2f9;
   padding-top: 28px;
 }
 
+.header[data-tab="cat"] {
+  background-color: #e1f2f9;
+}
+
+.header[data-tab="dog"] {
+  background-color: #ffeded;
+}
+
+.header[data-tab="rodent"] {
+  background-color: #fefde1;
+}
+
+.header[data-tab="reptile"] {
+  background-color: #d8f6ec;
+}
+
 .header__burger {
+  display: none;
+}
+
+.header__cross {
   display: none;
 }
 
@@ -41,6 +60,16 @@
   color: #4d4d4d;
 }
 
+.header__checklist {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  list-style: none;
+}
+
 .header__title {
   color: #4d4d4d;
   font-size: 18px;
@@ -56,10 +85,32 @@
   .header__menu {
     display: none;
   }
+  .header__menu_active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
   .header__list {
     display: none;
   }
-  .header__burger {
+  .header__checklist {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .header__title {
+    font-size: 20px;
+  }
+  .header__burger_active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .header__cross_active {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;

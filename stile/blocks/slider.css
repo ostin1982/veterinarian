@@ -1,7 +1,22 @@
 @charset "UTF-8";
 .slider {
-  background-color: #e1f2f9;
   height: 660px;
+}
+
+.slider[data-tab="cat"] {
+  background-color: #e1f2f9;
+}
+
+.slider[data-tab="dog"] {
+  background-color: #ffeded;
+}
+
+.slider[data-tab="rodent"] {
+  background-color: #fefde1;
+}
+
+.slider[data-tab="reptile"] {
+  background-color: #d8f6ec;
 }
 
 .slider__left {
@@ -45,6 +60,25 @@
      object-fit: contain;
   padding: 20px 0 0 80px;
   z-index: 10;
+  display: none;
+}
+
+.slider__img_active {
+  display: block;
+}
+
+.slider__img_dog {
+  padding: 20px 0 0 0;
+}
+
+.slider__img_rodent {
+  padding: 20px 0 0 0;
+  margin-left: -120px;
+}
+
+.slider__img_reptile {
+  padding: 70px 0 0 0;
+  margin-left: -180px;
 }
 
 .slider__choice {

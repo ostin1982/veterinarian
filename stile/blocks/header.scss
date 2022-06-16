@@ -2,11 +2,29 @@
 @import 'fonts';
 
 .header {
-    background-color: $color-main-blue;
     padding-top: 28px;
 
-    
+    &[data-tab="cat"] {
+        background-color: $color-main-blue;
+    }
+
+    &[data-tab="dog"] {
+        background-color: $color-main-maroon;
+    }
+
+    &[data-tab="rodent"] {
+        background-color: $color-main-yellow;
+    }
+
+    &[data-tab="reptile"] {
+        background-color: $color-second-green;
+    }
+
     &__burger {
+        display: none;
+    }
+
+    &__cross {
         display: none;
     }
 
@@ -42,6 +60,12 @@
         }
     }
 
+    &__checklist {
+        display: flex;
+        align-items: center;
+        list-style: none;
+    }
+
     &__title {
         color: $color-main-dark;
         font-size: $font-big;
@@ -58,14 +82,35 @@
     .header {
         &__menu {
             display: none;
+
+            &_active {
+                display: flex;
+            }
         }
 
         &__list {
             display: none;
         }
 
+        &__checklist {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        &__title {
+            font-size: $font-large;
+        }
+
         &__burger {
-            display: flex;
+            &_active {
+                display: flex;
+            }
+        }
+
+        &__cross {
+            &_active {
+                display: flex;
+            }
         }
     }
 }

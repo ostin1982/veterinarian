@@ -2,8 +2,23 @@
 @import 'fonts';
 
 .slider {
-    background-color: $color-main-blue;
     height: 660px;
+
+    &[data-tab="cat"] {
+        background-color: $color-main-blue;
+    }
+
+    &[data-tab="dog"] {
+        background-color: $color-main-maroon;
+    }
+
+    &[data-tab="rodent"] {
+        background-color: $color-main-yellow;
+    }
+
+    &[data-tab="reptile"] {
+        background-color: $color-second-green;
+    }
 
     &__left {
         flex-direction: column;
@@ -41,6 +56,25 @@
         object-fit: contain;
         padding: 20px 0 0 80px;
         z-index: 10;
+        display: none;
+
+        &_active {
+            display: block;
+        }
+
+        &_dog {
+            padding: 20px 0 0 0;
+        }
+
+        &_rodent {
+            padding: 20px 0 0 0;
+            margin-left: -120px;
+        }
+
+        &_reptile {
+            padding: 70px 0 0 0;
+            margin-left: -180px;
+        }
     }
 
     &__choice {

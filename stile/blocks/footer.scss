@@ -3,7 +3,22 @@
 
 .footer {
     padding: 40px 0;
-    background-color: $color-main-blue;
+
+    &[data-tab="cat"] {
+        background-color: $color-main-blue;
+    }
+
+    &[data-tab="dog"] {
+        background-color: $color-main-maroon;
+    }
+
+    &[data-tab="rodent"] {
+        background-color: $color-main-yellow;
+    }
+
+    &[data-tab="reptile"] {
+        background-color: $color-second-green;
+    }
 
     &__list {
         list-style-type: none;

@@ -2,8 +2,23 @@
 @import 'fonts';
 
 .format {
-    background-color: $color-main-blue;
     padding: 20px 0 40px 0;
+
+    &[data-tab="cat"] {
+        background-color: $color-main-blue;
+    }
+
+    &[data-tab="dog"] {
+        background-color: $color-main-maroon;
+    }
+
+    &[data-tab="rodent"] {
+        background-color: $color-main-yellow;
+    }
+
+    &[data-tab="reptile"] {
+        background-color: $color-second-green;
+    }
 
     &__block {
         background-color: $color-main-white;

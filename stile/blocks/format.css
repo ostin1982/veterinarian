@@ -1,6 +1,21 @@
 .format {
-  background-color: #e1f2f9;
   padding: 20px 0 40px 0;
+}
+
+.format[data-tab="cat"] {
+  background-color: #e1f2f9;
+}
+
+.format[data-tab="dog"] {
+  background-color: #ffeded;
+}
+
+.format[data-tab="rodent"] {
+  background-color: #fefde1;
+}
+
+.format[data-tab="reptile"] {
+  background-color: #d8f6ec;
 }
 
 .format__block {

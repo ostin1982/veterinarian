@@ -1,6 +1,21 @@
 .footer {
   padding: 40px 0;
+}
+
+.footer[data-tab="cat"] {
   background-color: #e1f2f9;
+}
+
+.footer[data-tab="dog"] {
+  background-color: #ffeded;
+}
+
+.footer[data-tab="rodent"] {
+  background-color: #fefde1;
+}
+
+.footer[data-tab="reptile"] {
+  background-color: #d8f6ec;
 }
 
 .footer__list {
