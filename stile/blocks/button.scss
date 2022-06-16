@@ -9,8 +9,15 @@
     background-color: inherit;
     font-size: $font-small;
 
+    &:hover {
+        background-color: $color-main-white;
+        border: 2px solid $color-main-white;
+        box-shadow: 0 0 20px $color-main-dark;
+    }
+
     &__format {
         font-size: $font-big;
+        background-color: $color-second-blue;
     }
 
     &__services {
@@ -19,6 +26,22 @@
 
     &__call {
         height: 67px;
+        background-color: $color-second-blue;
+    }
+
+    &__close {
+        background-color: $color-main-dark;
+        color: $color-main-white;
+        border: 2px solid $color-main-dark;
+
+        &:hover {
+            background-color: $color-main-white;
+            color: $color-main-dark;
+        }
+    }
+
+    &__popup {
+        background-color: $color-second-blue;
     }
 }
 

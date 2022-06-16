@@ -1,0 +1,11 @@
+{
+    "version": 3,
+    "mappings": "AAIK,AAAD,aAAQ,CAAC;EACL,SAAS,EEHP,IAAI;EFIN,UAAU,EAAE,MAAM;CACrB",
+    "sources": [
+        "popup.scss",
+        "_color.scss",
+        "_fonts.scss"
+    ],
+    "names": [],
+    "file": "popup.css"
+}

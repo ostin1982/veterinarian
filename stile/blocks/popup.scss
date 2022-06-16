@@ -1,0 +1,9 @@
+@import 'color';
+@import 'fonts';
+
+.popup {
+    &__title {
+        font-size: $font-h3;
+        text-align: center;
+    }
+}

@@ -40,7 +40,7 @@
                 </div>
                 <div class="col-lg-5 col-md-6 col-12 d-flex justify-content-md-end justify-content-between align-items-center header__contacts">
                     <a href="tel: +74954316928" class="pe-3 header__phone">+7 (495) 431-69-28</a>
-                    <button class="button">Задать вопрос</button>
+                    <button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Задать вопрос</button>
                 </div>
             </div>
             <div class="row mt-3 header__menu">
@@ -541,11 +541,36 @@
                 </div>
                 <div class="col-lg-5 col-12 d-flex justify-content-lg-end justify-content-between align-items-center footer__contacts">
                     <a href="tel: +74954316928" class="pe-3 footer__phone">+7 (495) 431-69-28</a>
-                    <button class="button">Задать вопрос</button>
+                    <button class="button" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@fat">Задать вопрос</button>
                 </div>
             </div>
         </div>
     </footer>
+    <div class="modal fade popup" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="popup__title" id="exampleModalLabel">Закажите консультацию</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                <form>
+                    <div class="mb-3">
+                    <label for="recipient-name" class="col-form-label">Администратор перезвонит Вам в течение 10 минут</label>
+                    <input type="text" class="form-control input" id="recipient-name" placeholder="Имя">
+                    </div>
+                    <div class="mb-3">
+                        <input type="text" class="form-control input js-phone" id="recipient-name" placeholder="Номер телефона">
+                    </div>
+                </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="button button__close" data-bs-dismiss="modal">Закрыть</button>
+                <button type="button" class="button button__popup">Позвоните мне</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <script src="js/bootstrap.min.js"></script>
     <script src="js/jQuery-3.6.0.min.js"></script>
     <script src="js/jquery.maskedinput.min.js"> </script>

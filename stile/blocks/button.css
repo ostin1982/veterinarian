@@ -7,8 +7,16 @@
   font-size: 14px;
 }
 
+.button:hover {
+  background-color: #ffffff;
+  border: 2px solid #ffffff;
+  -webkit-box-shadow: 0 0 20px #4d4d4d;
+          box-shadow: 0 0 20px #4d4d4d;
+}
+
 .button__format {
   font-size: 18px;
+  background-color: #b5e5f9;
 }
 
 .button__services {
@@ -17,6 +25,22 @@
 
 .button__call {
   height: 67px;
+  background-color: #b5e5f9;
+}
+
+.button__close {
+  background-color: #4d4d4d;
+  color: #ffffff;
+  border: 2px solid #4d4d4d;
+}
+
+.button__close:hover {
+  background-color: #ffffff;
+  color: #4d4d4d;
+}
+
+.button__popup {
+  background-color: #b5e5f9;
 }
 
 @media (max-width: 420px) {
